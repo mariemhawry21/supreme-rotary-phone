@@ -1,0 +1,129 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-image: url(./images/bg-desktop.svg);
+    background-color: var(--Violet);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+}
+header{
+    padding-bottom: 3rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 100px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    max-width: 100%;
+}
+.info h1{
+    font-size: 40px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-stretch: extra-expanded;
+    width: 85%;
+    max-width: 100%;
+
+}
+.info p{
+    width: 85%;
+    margin-bottom: 20px;
+    color: rgb(222, 222, 222);
+    max-width: 100%;
+}
+button{
+    width: 200px;
+    height: 50px;
+    color: var(--Violet);
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    font-weight: 700;
+}
+.photo {
+    background-image: u;
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+footer svg{
+width: 30px;
+margin: 8px;
+color: white;
+fill: white;
+}
+footer svg:hover{
+fill: var(--SoftMagenta);
+}
+button:hover{
+    background-color: var(--SoftMagenta);
+}
+@media(max-width:750px){
+    body{
+        background-image: url(./images/bg-mobile.svg);
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .info h1,.info p{
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+    .photo img{
+        max-width: 100%;
+    }
+    
+}
